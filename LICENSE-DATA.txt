@@ -1,0 +1,10 @@
+Original sequence-design and computational-analysis data contributed by
+Gabriel Kim are licensed under Creative Commons Attribution 4.0 International
+(CC BY 4.0), to the extent the author holds applicable copyright/database rights.
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Attribute Gabriel Kim and this project, preserve source attribution, link the
+license and identify changes. This grant does not replace the rights in source
+sequences, publications or databases and does not grant patent rights.
+Third-party records retain their own rights. See THIRD_PARTY_NOTICES.txt.
+The manuscript itself is excluded until its publication license is selected.

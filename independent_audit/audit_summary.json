@@ -1,0 +1,28 @@
+{
+  "audit_scope": "Independent CSV/FASTA/component/edit consistency audit; not biological validation or original pipeline reproduction",
+  "python_version": "3.12.14",
+  "baseline_records": 95,
+  "candidate_records": 97,
+  "unique_ids": 97,
+  "unique_sequences": 97,
+  "stage_counts": {
+    "A output": 73,
+    "B1 PhoQ": 18,
+    "B2 EnvZ": 6
+  },
+  "change_counts": {
+    "conditional_direct_ATG_TC": 39,
+    "unchanged": 54,
+    "conditional_SD1": 2,
+    "new_matched_scrambled_control": 2
+  },
+  "length_min_bp": 66,
+  "length_max_bp": 1842,
+  "gc_min_percent": 31.0,
+  "gc_max_percent": 53.8251,
+  "all_records_passed": true,
+  "baseline_checksums_match_archived_verification": true,
+  "original_scanner_rerun": false,
+  "folding_rerun": false,
+  "experimental_data_present": false
+}

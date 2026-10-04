@@ -1,0 +1,14 @@
+{
+  "BASELINE_All_95_Designs_Explained.md": "8b0a471f06ad6ff22c6cb481fa38fea9b1788b4c44e99cb12034a9006d3a6b35",
+  "BASELINE_order_manifest_final_v4.csv": "f12a21b465237d0bd4a1bb9ebaa4dcf6b4114fc12263c91d5d931b51151346ca",
+  "BASELINE_order_manifest_final_v4_components.csv": "fac7aafb5060553a277225c74404308a32203b3e14d9afe0f3ede0765111cfc9",
+  "START_HERE.md": "c88eb2d5d07615fa2969a4b7681abbd89debaf3ff24c1a4fcdd5656f3741ac0a",
+  "build_revision_proposal.py": "f86e335534ea0e6309116856d85aa40d1d40b0a475ecb0ea7421a5de395662de",
+  "changes_from_baseline.csv": "ef17104bc22117b703581f9bbf0ab8b0289f1441f811bead9a83a80b161a2813",
+  "proposal_97_NOT_FOR_ORDER.csv": "6c428e11e0fbcb2844ee181e2e6d7b8dd3c553bd5000dca0135df7f56ffe48c4",
+  "proposal_97_NOT_FOR_ORDER.fasta": "b542af5c1d507b76a939d1e3a0f1a229533081de7dbc46aecc7e195f48c84161",
+  "proposal_components.csv": "62a420b5297fac42bebb24c2443f229c3bb3b325751e5a872fb0fdf8d9d785b2",
+  "recomputed_checks.csv": "cfce079ae68487045b615237b523e3d5494533dcdea9a58b05aa4460b7cd6094",
+  "scan_details.json": "6b5451e5124d03dc6d78a5106ffff580aa81b30c94c3bc92cc16531599e98d47",
+  "verification.json": "ba23eb42c33a1f5681fc87561427f81b5abc67eb1437b8ddc48f19c63f35ff6d"
+}

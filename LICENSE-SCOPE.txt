@@ -1,0 +1,9 @@
+LICENSE SCOPE
+MIT applies to original project code in project/*.py, project/scripts/,
+publication_code/ and original preparation scripts. Dependencies keep their
+own licenses. CC BY 4.0 applies to original design/analysis contributions in
+candidates/, independent_audit/, figures/ and reproduction/, and original
+project outputs. Third-party inputs, excerpts and constituent source sequences
+are excluded from these grants and retain their source rights.
+These licenses do not assert ownership over natural sequences or other authors'
+work. Attribution is retained in component maps, source manifests and notices.

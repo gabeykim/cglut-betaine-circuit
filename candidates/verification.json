@@ -1,0 +1,51 @@
+{
+  "baseline_count": 95,
+  "proposed_count": 97,
+  "baseline_records_unchanged": 54,
+  "conditional_TC_edits": 39,
+  "conditional_SD1_edits": 2,
+  "new_controls": 2,
+  "scope_counts": {
+    "main": 86,
+    "optional_Ptuf": 3,
+    "conditional_PsodA": 2,
+    "deferred_EnvZ": 6
+  },
+  "source_sha256": {
+    "designs/order_manifest_final_v4.csv": "f12a21b465237d0bd4a1bb9ebaa4dcf6b4114fc12263c91d5d931b51151346ca",
+    "designs/order_manifest_final_v4_components.csv": "fac7aafb5060553a277225c74404308a32203b3e14d9afe0f3ede0765111cfc9"
+  },
+  "reporter_prefix": "ATGAGTAAAGGAGAAGAACTTTTCA",
+  "gained_site_findings": [],
+  "boundary_site_findings": [],
+  "positive_control_fixtures": [
+    "site_scan finds a sense-strand site at the right position",
+    "site_scan finds a minus-strand-only site, in forward coordinates",
+    "site_scan reports a palindrome on both strands at one coordinate",
+    "site_scan(both_strands=False) suppresses minus-strand hits",
+    "site_scan defaults to the full 35-enzyme catalogue",
+    "every one of the 35 catalogue sites is detectable",
+    "site_scan rejects an unknown enzyme name",
+    "sigA_scan finds the exact consensus at 1.000 of max",
+    "sigA_scan finds nothing in a G-tract",
+    "sigA_scan(both_strands=True) finds an antisense consensus",
+    "sd_atg_scan finds SD+ATG at plausible spacing",
+    "sd_atg_scan honours known_starts",
+    "basic_checks finds a run of 7",
+    "basic_checks does NOT fire on a run of 6",
+    "basic_checks computes GC and length",
+    "iupac_regex expands S to [CG] and B to [CGT]",
+    "iupac_regex rejects an unknown IUPAC code",
+    "host_rm_scan finds BOTH resolutions of a degenerate motif",
+    "host_rm_scan finds every host motif in its own fixture",
+    "host_rm_scan reports minus-strand hits in forward coordinates",
+    "host_rm_scan finds OVERLAPPING occurrences",
+    "host_rm_scan finds nothing in a motif-free fixture",
+    "host_rm motifs are NOT in the commercial CATALOGUE (the two sets stay distinct)",
+    "junction_aware finds a site created by two components meeting",
+    "junction_aware does not mis-call a within-component site as spanning",
+    "junction_aware classifies a SigA window that crosses a boundary",
+    "junction_aware rejects a map with a gap, an overlap, a short span, or no entries",
+    "junction_aware accepts a correct map"
+  ]
+}

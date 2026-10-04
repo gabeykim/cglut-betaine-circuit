@@ -1,0 +1,44 @@
+READING THE HISTORICAL REPORTS
+
+The original scientific records are preserved to make the design history
+inspectable. Reproducing a report file does not endorse all of its interpretations.
+The manuscript and points below supersede conflicting historical narrative.
+
+1. A transcript-start heuristic weight is not a calibrated posterior probability.
+   Its benchmark uses sequence contexts anchored to known transcription starts
+   and restricts candidate positions to those contexts. It does not establish
+   unconstrained genomic prediction accuracy or prove Psyn is leaderless.
+   Conditional TC/SD1 changes are hypotheses, not validated fixes.
+2. The exact-coordinate operator control uses sites that trained the matrix.
+   26/29 coordinate recovery is an implementation check, not held-out sensitivity.
+3. The 82 intergenic-background sites are retained members of the original 304.
+   They are not a fresh exhaustive genome-wide hit total. Empirical tails are
+   not binding probabilities or false-discovery rates. Historical Poisson values
+   are not used for biological inference in the manuscript.
+4. Sequence similarity is not a cross-phosphorylation probability. Domain
+   extraction for comparative triage and Pfam gathering-threshold annotation
+   used distinct acceptance logic and must not be conflated.
+5. Lack of a strong profile hit does not prove absence of a functional domain.
+   A computed heptad register, especially in a low-information transmembrane
+   region, does not establish that a chimera will transmit a ligand signal.
+6. The lysC motif's downstream edge is 115 bases upstream of the mapped TSS,
+   not approximately 30. Binding or regulation at this site is unmeasured.
+7. The 97 entries are fragments with shared biological dependencies. They are
+   not 97 independent trials or finished strains. Baseline 95 + two added
+   matched controls = 97; 41 baseline entries also receive conditional edits.
+8. Native PacA and McpX binding evidence exists; it does not validate the proposed
+   chimeras. Chemoreceptor/PhoQ coupling has precedent in another ligand/host
+   setting. Neither absence of all precedent nor validation of this exact system
+   is an appropriate claim.
+9. Scanner and test success establishes only the properties actually checked.
+   Commercial cloning sites and limited host restriction-related motifs are
+   separate screens. Neither establishes transformation success.
+10. A historical independent-audit JSON marks scanner/folding reruns false because
+    those operations are outside that audit script. Separate logs document the
+    subsequent original-scanner and baseline-folding reproduction. Revised P1
+    folding remains uncomputed.
+11. Three phasing controls change background or spacer sequence while keeping
+    operator identity and spacing fixed. The earlier table label "operator swaps"
+    was incorrect. The 14-position substitution series preserves total length and
+    GC content; local sequence and individual nucleotide counts can vary. Read
+    historical composition-invariance language with this qualification.

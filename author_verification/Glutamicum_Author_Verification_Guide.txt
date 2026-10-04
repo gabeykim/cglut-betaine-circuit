@@ -1,0 +1,162 @@
+AUTHOR VERIFICATION GUIDE FOR DRAFT 0.6
+Prepared 4 October 2026. Author execution and review are PENDING.
+
+What you are checking
+You will start a fresh computation yourself, inspect whether it completed, and
+compare five newly generated file hashes with the archived reference hashes.
+A SHA-256 hash is a fingerprint of a file's exact bytes. A matching fingerprint
+is strong evidence that the files are identical. It does not show that the
+biological model, source data or interpretation is correct. The short direct
+checks below address selected claims in addition to file repeatability.
+
+This guide was prepared with AI assistance. Its existence is not evidence that
+Gabriel Kim has performed the checks. Do not add a completed-verification claim
+to the paper until you have run and reviewed the checks and retained the record.
+Using the same pipeline is an author-run reproduction, not an independently
+implemented analysis. You need not type every command from memory or calculate
+SHA-256 by hand. What matters is that you personally run, inspect and understand
+the check and accurately describe its scope.
+
+1. Open the supplied archive
+Extract Glutamicum_Preprint_Data_and_Audit_Draft.zip. It contains a folder named
+Glutamicum_Preprint_Draft. Keep that extracted folder unchanged as the reference.
+Open a terminal and change into that folder. All commands below assume that
+starting location. Substitute the real path to your extracted folder in cd:
+
+  cd /actual/path/to/Glutamicum_Preprint_Draft
+  cglu_release="$PWD"
+
+The folder must contain README.txt, project/, publication_code/ and reproduction/.
+Keep a copy of the original downloaded ZIP and record its SHA-256:
+
+  shasum -a 256 /actual/path/to/Glutamicum_Preprint_Data_and_Audit_Draft.zip
+
+2. Create the scientific environment
+The recorded run used Linux and Python 3.12.14. On a system with Python 3.12
+available, make an isolated environment outside the extracted reference folder:
+
+  python3.12 -m venv ../cglu_author_env
+  source ../cglu_author_env/bin/activate
+  python -m pip install -r reproduction/requirements_reproduction.txt
+  python --version
+  command -v hmmscan
+  hmmscan -h
+
+Record the Python version, operating system and HMMER version (expected 3.4).
+The exact package versions are in reproduction/requirements_reproduction.txt.
+That file and reproduction/environment.json describe the tested environment.
+On macOS, binary availability may differ. If installation or hmmscan fails,
+retain the error and resolve the environment before proceeding; do not quietly
+substitute versions and then call the result an exact-environment rerun.
+A Linux environment matching the recorded setup is the closest reproduction.
+
+3. Start a fresh run yourself
+Choose a destination outside the release. It must not already exist. This
+example uses a sibling folder; the driver refuses to overwrite existing work:
+
+  cglu_run="$cglu_release/../cglu_author_run_01"
+  python publication_code/reproduce.py "$cglu_run"
+
+The driver copies the project into the new folder, reruns the documented stages
+and writes logs. It uses the supplied cached inputs and the documented label
+correction. It does not refetch database inputs or repeat DeepTMHMM inference.
+Read the terminal result and the logs in the new logs/ folder. The expected
+summary is 38/38 selected files byte-identical. Do not count a printed PASS
+alone as your review; inspect comparison_results.csv and the five hashes below.
+If a stage fails, retain its log and do not mark later stages as verified.
+
+Record the software actually used:
+
+  python --version > "$cglu_run/author_python_version.txt"
+  python -m pip freeze > "$cglu_run/author_packages.txt"
+  uname -a > "$cglu_run/author_platform.txt"
+  hmmscan -h > "$cglu_run/author_hmmer.txt"
+
+4. Compute and compare these five hashes yourself
+Run each command below. Compare every displayed digest with the expected
+digest, and paste the observed digest into author_check_record.txt. The expected
+digests were extracted from the previously recorded 38-file comparison and
+checked against the archived file bytes during guide preparation. These are
+reference values, not your observed results.
+
+1. The 95-record baseline used to derive P1.
+  shasum -a 256 "$cglu_run/consolidated_v4/order_manifest_final_v4.csv"
+  Expected SHA-256: f12a21b465237d0bd4a1bb9ebaa4dcf6b4114fc12263c91d5d931b51151346ca
+
+2. The genomic operator-scan output after the documented label correction.
+  shasum -a 256 "$cglu_run/project/results/hits_all.csv"
+  Expected SHA-256: b654d21b2a8901932fc3a8156e271b2f38212134bdbf8d1a13e101647f786dd8
+
+3. The 24 sensor-fragment sequences.
+  shasum -a 256 "$cglu_run/project/designs/junctions_v4.fasta"
+  Expected SHA-256: ad388684ca5a297544ec350857d5a7173287b55c074979d84fabc7496cb112f6
+
+4. The REC-domain identity comparisons, including the MtrA denominator.
+  shasum -a 256 "$cglu_run/project/results/identity_rec.csv"
+  Expected SHA-256: 878bb25519f4ece45777de4a844546bab50892523adb923ca592b4ab92de193f
+
+5. The 97-record P1 candidate sequence collection.
+  shasum -a 256 "$cglu_run/p1/proposal_97_NOT_FOR_ORDER.fasta"
+  Expected SHA-256: b542af5c1d507b76a939d1e3a0f1a229533081de7dbc46aecc7e195f48c84161
+
+Keep the raw outputs too. For convenience, after the individual comparisons:
+
+  shasum -a 256 "$cglu_run/consolidated_v4/order_manifest_final_v4.csv" "$cglu_run/project/results/hits_all.csv" "$cglu_run/project/designs/junctions_v4.fasta" "$cglu_run/project/results/identity_rec.csv" "$cglu_run/p1/proposal_97_NOT_FOR_ORDER.fasta" > "$cglu_run/author_observed_sha256.txt"
+
+If shasum is unavailable, use sha256sum with the same file paths. A difference
+is a result to investigate and retain. Do not edit an output to force a match.
+Preserve CSV and FASTA bytes; spreadsheet software may change a CSV on saving.
+
+5. Check selected claims directly
+A. Open the newly generated project/results/identity_rec.csv without saving
+changes. Locate the Cg_MtrA rows for Sal_PhoP and Ec_OmpR. Inspect the identities
+and aligned_columns_trimmed fields. Using a calculator, independently evaluate
+40/111*100, 54/111*100 and their difference. Rounded to two decimal places these
+should be 36.04%, 48.65% and 12.61 percentage points. Check that the manuscript
+uses aligned columns, not the shorter-sequence denominator. This checks the
+reported arithmetic and labels; it does not validate the alignment biologically.
+
+B. Open p1/changes_from_baseline.csv and compare its added-record identifiers
+with p1/proposal_97_NOT_FOR_ORDER.fasta. Check that two added scramble controls
+account for 95 becoming 97. Confirm that edits to existing records do not count
+as new records. Inspect the two added sequences and their listed parents in the
+component and change tables. Record which identifiers you checked.
+
+C. For JXN_ECA_PHOQ_A_m1 in project/designs/junctions_v4.csv, inspect the source
+accessions, junction coordinates and protein_seq. The listed protein length is
+613 residues and DNA length 1842 bases: 613*3+3 = 1842 including the terminal
+stop codon. Locate that identifier in junctions_v4.fasta. Record the length
+check; do not treat it as proof that every codon or fusion boundary is correct.
+
+D. Read the genomic-background Results paragraph alongside
+reproduction/null_count_editorial_check.json. Check 535264*0.0001 = 53.5264.
+Explain in your own words why window-level reference counts cannot establish
+significance for the 82 selected, merged sites. If you cannot follow this
+distinction, leave the interpretation review incomplete and resolve it.
+
+6. Retain what you actually did
+Fill author_check_record.txt. Keep the fresh output directory, stage logs,
+observed hashes, software records, date and your notes. Record failures and
+unresolved questions. Return the completed record and logs for incorporation
+into the supplement. Do not include passwords, tokens or unrelated personal
+files. No public upload is required to perform these checks.
+
+Suggested Methods wording ONLY AFTER successful completion
+"The corresponding author additionally initiated a separate execution of the
+documented pipeline and personally compared SHA-256 hashes for five selected
+regenerated outputs with the archived reference hashes. The selected files,
+expected and observed hashes, execution environment, date and review record
+are provided in the supplement. Selected arithmetic and record-provenance
+checks were also performed as documented there. These checks assess output
+repeatability and the specified claims, not experimental circuit function or
+independent validation of the underlying models."
+
+Use only the portions that accurately describe the completed work. If fewer
+than five files match or the direct checks are incomplete, report that scope
+explicitly. Do not describe a failed or incomplete check as successful.
+
+Other author decisions remain
+The draft still needs confirmation of authorship, funding and interests, final
+AI-use details where recoverable, and repository, licensing and release details.
+Completing this checklist does not by itself make the paper submission-ready
+or guarantee acceptance. No experimental validation is implied.

@@ -1,0 +1,44 @@
+THIRD-PARTY SOURCES AND DEPOSIT BOUNDARY
+
+This public repository is separate from the private review supplement.
+Do not push the full private review ZIP.
+
+Included source records retain source rights, not the project's blanket license:
+- UniProt sequences/annotations: UniProt Consortium, CC BY 4.0 for copyrightable
+  database content. https://www.uniprot.org/help/license
+- Pfam profiles: InterPro/Pfam, CC0 1.0 for downloadable Pfam data.
+  https://interpro-documentation.readthedocs.io/en/latest/license.html
+- Genome and RefSeq records: NCBI/INSDC accessions in project/data/manifest.csv
+  and code. https://www.ncbi.nlm.nih.gov/home/about/policies/
+- PDB entity metadata: entry identifiers and sources preserved in project/data/cache/pdb/.
+  https://www.rcsb.org/pages/policies
+- Henke et al. 2021, doi:10.3390/microorganisms9010204: cached article includes
+  its CC BY 4.0 notice and author attribution; source of promoter material.
+- Liu et al. 2023, doi:10.1021/acssynbio.3c00246: cached article includes
+  CC BY 4.0 notice and author attribution; source of bicistronic design material.
+- Pfeifer-Sancar et al. 2013, doi:10.1186/1471-2164-14-888: source supplementary
+  tables S1/S3 retained with attribution to the article's Creative Commons terms.
+- Other included cached article HTML retains its embedded license/attribution.
+  No project license replaces those terms.
+- Extracted regulatory-site records retain RegulonDB and PRODORIC provenance;
+  only original analysis/design contributions receive the project data license.
+- Archived DeepTMHMM inference remains attributed to DeepTMHMM 1.0.57. The
+  service/model is not redistributed or rerun by this package.
+
+Excluded from this public repository: cached RegulonDB/PRODORIC API
+payloads and REBASE downloads whose redistribution terms were not established
+in this review; the Ding et al. noncommercial-license full article; and other
+cached abstracts/excerpts without a recorded reusable license. Exact excluded
+paths, hashes and source entry points are in excluded_inputs.csv.
+
+These exclusions do not change any candidate sequence or reported result.
+The lightweight candidate audit runs without them. The cached-input full rerun
+requires restoration of excluded input dependencies. Restore from a lawfully
+held review archive with publication_code/restore_review_inputs.py, or obtain
+the inputs from their original providers subject to their terms. Current online
+responses may differ from historical bytes; do not assume hash equality.
+
+The full 38-file rerun was verified using the private complete cached-input
+supplement, not from this filtered public directory alone. Resolve the archive
+availability of required excluded inputs before describing the public release
+as a self-contained reproduction package.

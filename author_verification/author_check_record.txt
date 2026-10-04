@@ -1,0 +1,56 @@
+AUTHOR CHECK RECORD — DRAFT 0.4
+Status at preparation: PENDING. Leave observations blank until performed.
+Name:
+Execution date and time zone:
+Original ZIP SHA-256:
+Computer operating system and architecture:
+Python version:
+HMMER version:
+Environment records and stage-log locations:
+Any differences from the documented commands or environment:
+Pipeline final status:
+
+File: consolidated_v4/order_manifest_final_v4.csv
+Expected SHA-256: f12a21b465237d0bd4a1bb9ebaa4dcf6b4114fc12263c91d5d931b51151346ca
+Observed SHA-256:
+Personally compared (yes/no):
+Result (match/different/not completed):
+Notes:
+
+File: project/results/hits_all.csv
+Expected SHA-256: b654d21b2a8901932fc3a8156e271b2f38212134bdbf8d1a13e101647f786dd8
+Observed SHA-256:
+Personally compared (yes/no):
+Result (match/different/not completed):
+Notes:
+
+File: project/designs/junctions_v4.fasta
+Expected SHA-256: ad388684ca5a297544ec350857d5a7173287b55c074979d84fabc7496cb112f6
+Observed SHA-256:
+Personally compared (yes/no):
+Result (match/different/not completed):
+Notes:
+
+File: project/results/identity_rec.csv
+Expected SHA-256: 878bb25519f4ece45777de4a844546bab50892523adb923ca592b4ab92de193f
+Observed SHA-256:
+Personally compared (yes/no):
+Result (match/different/not completed):
+Notes:
+
+File: p1/proposal_97_NOT_FOR_ORDER.fasta
+Expected SHA-256: b542af5c1d507b76a939d1e3a0f1a229533081de7dbc46aecc7e195f48c84161
+Observed SHA-256:
+Personally compared (yes/no):
+Result (match/different/not completed):
+Notes:
+
+DIRECT REVIEW
+A. MtrA rows and denominator checked; independently calculated values:
+B. Added control identifiers, baseline count and P1 count checked:
+C. Sensor identifier, protein and DNA lengths checked:
+D. Explanation of the window-versus-selected-site distinction:
+Unresolved questions or failures:
+What I actually verified (own words):
+What I did not verify:
+Date and typed name confirming this record is accurate:

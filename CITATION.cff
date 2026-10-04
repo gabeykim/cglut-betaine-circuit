@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this computational resource; a Zenodo DOI is pending."
+type: software
+title: "Computational design and reproducibility audit of candidate betaine responsive circuits in Corynebacterium glutamicum"
+authors:
+  - family-names: Kim
+    given-names: Gabriel
+    affiliation: "Independent researcher, Palo Alto, CA, USA"
+    email: "gabe.y.kim@gmail.com"
+version: "0.6.0"
+license: MIT
+abstract: "Computational workflow and 97 candidate DNA fragments; biological function is untested. Code licensing is MIT; data and third-party terms are described separately."
+repository-code: "https://github.com/gabeykim/cglut-betaine-circuit"

@@ -1,0 +1,15 @@
+path,sha256,source
+project/data/cache/literature/pmc10653921_xu2023.txt,e4fc34abdfe3f99e8e9315f7a2155ec7025e4e9b6616863ff988797fb95c6ed2,https://pmc.ncbi.nlm.nih.gov/articles/PMC10653921/
+project/data/cache/literature/pmc7544201_ding2020_clmrdr.html,108bcfdb3b1b3950bf4475184c2c30531a10c871a95017138f6ac6c2caf1b2c2,https://pmc.ncbi.nlm.nih.gov/articles/PMC7544201/
+project/data/cache/literature/rm/pubmed_rm_records.xml,2f497ce505512fd04feb7e5cc7c1701f8579382adb2465c5463537d1bfb08632,https://pubmed.ncbi.nlm.nih.gov/
+project/data/cache/literature/zhao2024_abstract.txt,b88cfea1939e0f007940fd804011b8f6ceeda90b259a05d6f585aff92c486d18,https://doi.org/10.1021/acs.jafc.4c00041
+project/data/cache/prodoric/MX000339_phop_salmonella.json,d96c6530db1854f69dbad8ef3d80d74eca269ad300400be02219d8bb99e3946c,https://www.prodoric.de/ ; project/scripts/fetch_prodoric_salmonella.py
+project/data/cache/prodoric/openapi.json,87d654bc13c4923d9d289ba0b516dfb6d54e6eccfb51ac81b26511f2ca9f272d,https://www.prodoric.de/ ; project/scripts/fetch_prodoric_salmonella.py
+project/data/cache/prodoric/organisms.json,561eea7f6ea815494eedceb8dc886a1dde61ec89426416dd45738289f6a9b9df,https://www.prodoric.de/ ; project/scripts/fetch_prodoric_salmonella.py
+project/data/cache/prodoric/salmonella_regulatory_network.json,30aeb0432a6a23274e23b85b956af28cc956b04a9a03b292086faac113d1797a,https://www.prodoric.de/ ; project/scripts/fetch_prodoric_salmonella.py
+project/data/cache/rebase/genomes_index.html,03996e606dc1a61d89852bb4586d824c29b544a2d4693fae6a3abbd25dd7f19a,http://rebase.neb.com/rebase/
+project/data/cache/rebase/link_bionet.txt,e16427043b900bd856a18c9b275aa7f40989d854804af56f4bed9ed4a7858185,http://rebase.neb.com/rebase/
+project/data/cache/rebase/link_orgref.txt,cec83f390ec6a14a9a40d0282ec878dcfd8dbeeabbfe4fff59da8eadaa200202,http://rebase.neb.com/rebase/
+project/data/cache/rebase/link_proto.txt,350bb082c20fe7b834448c86bd7ab120ee1d1cfc8947c4b288d1b8caba74f13e,http://rebase.neb.com/rebase/
+project/data/cache/regulondb/ompr_ecoli_regulon.json,93003ed4634fd8f90093c4ccdb11b8e90a70f9e935b8d3b3b1d9477540ab1fd8,https://regulondb.ccg.unam.mx/ ; project/scripts/fetch_scan_data.py
+project/data/cache/regulondb/phop_ecoli_regulon.json,8b4d467d3c539634d68b03390a65ac414b48e5fa856b55364e050fc934753e0b,https://regulondb.ccg.unam.mx/ ; project/scripts/fetch_scan_data.py
