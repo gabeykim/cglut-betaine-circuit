@@ -1,0 +1,27 @@
+{
+  "title": "Computational design and reproducibility audit of candidate betaine-responsive circuits in Corynebacterium glutamicum",
+  "upload_type": "software",
+  "description": "<p>Version 0.6.0 of a computational design resource containing 97 candidate DNA fragments (73 output fragments and 24 sensor candidates), analysis scripts, source provenance, figures, audit records and a working manuscript. The complete 427-file resource is packaged in cglut-betaine-circuit-v0.6.0.tar.xz; selected current candidates and audit scripts are also exposed directly in the repository.</p><p>No functioning circuit, engineered strain or experimental induction is reported. Biological function is untested. Recorded computational reruns were AI-executed; personal author verification and final manuscript declarations remain pending.</p><p>The lightweight candidate audit runs on the included files. The recorded 38-file reproduction comparison used a complete cached-input review package. Fourteen third-party cached inputs are excluded from the public archive; exact paths, hashes and provenance are documented in excluded_inputs.csv and THIRD_PARTY_NOTICES.txt. Full pipeline reproduction requires restoring these dependencies lawfully. This public resource is not a self-contained reproduction of every recorded stage.</p><p>Original code is MIT-licensed. Original design and analysis data are licensed under CC BY 4.0, subject to source rights. Third-party assets retain their original terms. The manuscript publication license remains pending; see LICENSE-SCOPE.txt.</p>",
+  "creators": [
+    {
+      "name": "Kim, Gabriel",
+      "affiliation": "Independent researcher, Palo Alto, CA, USA"
+    }
+  ],
+  "version": "0.6.0",
+  "license": "mit",
+  "keywords": [
+    "Corynebacterium glutamicum",
+    "computational design",
+    "synthetic biology",
+    "reproducibility",
+    "candidate DNA sequences"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/gabeykim/cglut-betaine-circuit",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
