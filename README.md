@@ -6,9 +6,9 @@ The 95-record baseline became 97 through two added operator-scramble controls.
 No functioning circuit, engineered strain or experimental induction is reported.
 
 This is the public computational resource, version 0.6.0, at
-https://github.com/gabeykim/cglut-betaine-circuit. A Zenodo DOI is pending.
+https://github.com/gabeykim/cglut-betaine-circuit. Archived release: [version 0.6.0 on Zenodo](https://zenodo.org/records/23132170), DOI **10.5281/zenodo.23132170**.
 The manuscript remains a draft. See
-DEPOSIT_STEPS.txt for the remaining publication steps and declaration checks.
+DEPOSIT_STEPS.txt inside the complete source archive for the remaining publication steps and declaration checks.
 
 ## Download the complete resource
 
@@ -62,7 +62,7 @@ hmmscan -h
 ```
 
 Some cached third-party inputs are deliberately excluded from this public
-staging directory. Read `THIRD_PARTY_NOTICES.txt` and `excluded_inputs.csv`.
+resource. Read `THIRD_PARTY_NOTICES.txt` and `excluded_inputs.csv`.
 If you hold the complete review archive lawfully, restore the exact inputs:
 
 ```bash

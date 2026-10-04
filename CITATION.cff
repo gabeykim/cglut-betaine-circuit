@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this computational resource; a Zenodo DOI is pending."
+message: "Please cite the archived computational resource using its version-specific DOI."
 type: software
 title: "Computational design and reproducibility audit of candidate betaine responsive circuits in Corynebacterium glutamicum"
 authors:
@@ -11,3 +11,5 @@ version: "0.6.0"
 license: MIT
 abstract: "Computational workflow and 97 candidate DNA fragments; biological function is untested. Code licensing is MIT; data and third-party terms are described separately."
 repository-code: "https://github.com/gabeykim/cglut-betaine-circuit"
+doi: "10.5281/zenodo.23132170"
+url: "https://zenodo.org/records/23132170"
